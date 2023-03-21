@@ -20,7 +20,20 @@ tailwind.config = {
             fontSize: {
                 'fs64': '64px',
                 'fs45': '45px',
-              }
+            },
+            animation: {
+                "upDown":"down 1s infinite alternate linear"
+            },
+            keyframes:{
+                down:{
+                    from:{
+                        transform:"translateY(0)"
+                    },
+                    to:{
+                        transform:"translateY(20px)"
+                    }
+                }
+            }
         }
     }
 }
